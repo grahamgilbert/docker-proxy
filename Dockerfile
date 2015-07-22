@@ -1,6 +1,8 @@
 FROM nginx
 MAINTAINER Graham Gilbert <graham@grahamgilbert.com>
 
+ADD run.sh /run.sh
+RUN chmod 755 /run.sh
 ADD render-templates.sh /render-templates.sh
 RUN chmod 755 /render-templates.sh
 ADD substitute-env-vars.sh /substitute-env-vars.sh
