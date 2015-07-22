@@ -1,4 +1,4 @@
-FROM phusion/passenger-customizable:0.9.11
+FROM phusion/passenger-customizable:0.9.16
 MAINTAINER Graham Gilbert <graham@grahamgilbert.com>
 
 RUN mkdir -p /etc/my_init.d
