@@ -6,7 +6,7 @@ ADD etc.d/ /etc/my_init.d/
 RUN chmod 755 /etc/my_init.d/render-templates.sh
 ADD substitute-env-vars.sh /substitute-env-vars.sh
 RUN chmod 755 /substitute-env-vars.sh
-
+ADD nginx.conf /etc/nginx/nginx.conf
 CMD ["/sbin/my_init"]
 
 RUN rm -f /etc/service/nginx/down
